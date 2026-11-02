@@ -32,6 +32,7 @@
 - [仓库结构](#-仓库结构)
 - [快速开始](#-快速开始)
 - [我是怎么学的](#-我是怎么学的)
+- [论文复现（第二阶段）](#-论文复现第二阶段)
 - [下一步](#-下一步)
 
 ---
@@ -152,6 +153,10 @@ CNN-to-3DGS/
 │   └── 06_3dgs/               # 表征 / 投影 / 可微渲染 / 球谐 / 密度控制
 ├── assets/figures/            # 文中插图（脚本生成，非截图）
 ├── tools/make_figures.py      # 一键重绘全部插图
+├── paper-reproduction/        # 第二阶段：论文精读与 Baseline 复现
+│   ├── templates/             # 论文卡片 / 精读笔记 / 复现日志模板
+│   ├── checklists/            # 复现前中后的自检清单
+│   └── papers/                # 每篇论文一个目录（YYYY-一作-简称）
 └── requirements.txt
 ```
 
@@ -207,10 +212,34 @@ docs/00-roadmap.md → docs/01-cnn.md → docs/02-transformer.md
 
 ---
 
+## 📚 论文复现（第二阶段）
+
+第一轮"广度扫盲"结束后，仓库进入第二阶段：**从跑通 Demo 转向复现论文**。
+这部分内容独立放在 [`paper-reproduction/`](paper-reproduction/README.md)，与基础篇分开，方便直接看"研究能力"这一层。
+
+```text
+选文 → 精读（问题 / 方法 / 实验 / 局限） → 环境 → 跑通 → 指标对齐 → 消融
+                                              ↘ 跑不通也要记录原因
+```
+
+为了让每篇论文的产出格式统一，这套工作流已经模板化：
+
+| 模板 | 用途 |
+| :--- | :--- |
+| [`paper-card`](paper-reproduction/templates/paper-card.md) | 论文卡片：30 秒回忆起一篇论文做了什么 |
+| [`paper-note`](paper-reproduction/templates/paper-note.md) | 精读笔记：公式人话化 + 批判性阅读 + 与组内工作的关系 |
+| [`repro-log`](paper-reproduction/templates/repro-log.md) | 复现日志：环境、命令、论文 vs 我的指标对照、差异分析 |
+| [`repro-checklist`](paper-reproduction/checklists/repro-checklist.md) | 复现前 / 中 / 后的自检清单（含"论文没说的超参在哪里翻"） |
+
+> 状态：🏗 框架与模板已就绪，等待第一批论文入库（方向：神经隐式场 / 3DGS / 点云重建）。
+
+---
+
 ## 🔭 下一步
 
 第一轮"广度扫盲"到此为止，接下来切到深度：
 
+- [x] 搭建论文复现工作流与模板（[`paper-reproduction/`](paper-reproduction/README.md)）
 - [ ] 精读组内 3–5 篇 SIGGRAPH / CVPR 论文（神经隐式场、3DGS、点云重建）
 - [ ] 在云端 GPU 复现 3DGS 官方实现，跑通真实场景重建
 - [ ] 读懂 CUDA 光栅化算子，尝试改进高斯初始化 / 几何约束
