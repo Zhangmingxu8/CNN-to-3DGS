@@ -231,7 +231,7 @@ docs/00-roadmap.md → docs/01-cnn.md → docs/02-transformer.md
 | [`repro-log`](paper-reproduction/templates/repro-log.md) | 复现日志：环境、命令、论文 vs 我的指标对照、差异分析 |
 | [`repro-checklist`](paper-reproduction/checklists/repro-checklist.md) | 复现前 / 中 / 后的自检清单（含"论文没说的超参在哪里翻"） |
 
-> 状态：🏗 框架与模板已就绪，等待第一批论文入库（方向：神经隐式场 / 3DGS / 点云重建）。
+> 状态：📖 第 1 篇精读中 —— [**DCx（SIGGRAPH 2026）**](paper-reproduction/papers/2026-Bao-DCx/README.md)：论文精读、术语表、代码地图已完成；环境因本机无 NVIDIA GPU 暂缓到云 GPU（详见其 `repro.md`）。
 
 ---
 

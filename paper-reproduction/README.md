@@ -6,7 +6,7 @@
 | :--- | :--- |
 | 目标 | 每篇论文产出一份**能讲给别人听**的精读笔记 + 一份**能跑出数字**的复现记录 |
 | 范围 | SIGGRAPH / SIGGRAPH Asia / CVPR / ICCV / ECCV / PG 近 2–3 年 |
-| 当前阶段 | 🏗 框架已搭好，等待第一批论文进入 |
+| 当前阶段 | 📖 首篇精读中（DCx, SIGGRAPH 2026） |
 | 关联 | 基础篇见 [`docs/06-3dgs.md`](../docs/06-3dgs.md)；工具链见 [`docs/07-git-workflow.md`](../docs/07-git-workflow.md) |
 
 ---
@@ -35,7 +35,7 @@ flowchart LR
 
 | # | 论文 | 会议/年份 | 方向 | 精读 | 复现 | 笔记 |
 | :-: | :--- | :--- | :--- | :-: | :-: | :-: |
-| — | *（等待第一篇）* | — | — | — | — | — |
+| 1 | [DCx: Dual Contouring over Expanded Cubes](papers/2026-Bao-DCx/README.md) | SIGGRAPH 2026 | 神经隐式几何 / 零水平集提取 | ✅ | 🛠 | [📄](papers/2026-Bao-DCx/notes.md) |
 
 状态说明：`📋 待读` · `📖 精读中` · `🛠 复现中` · `✅ 已复现` · `⚠️ 复现受阻`
 

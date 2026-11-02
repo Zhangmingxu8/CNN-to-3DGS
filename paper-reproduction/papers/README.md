@@ -10,25 +10,29 @@ YYYY-FirstAuthor-ShortName/
 
 ```text
 papers/
-├── 2023-Kerbl-3DGS/
-│   ├── README.md      # 论文卡片（元信息 + 三句话总结）
-│   ├── notes.md       # 精读笔记
-│   ├── repro.md       # 复现记录
-│   ├── assets/        # 架构图、结果对比图、训练曲线
-│   └── code/          # 复现补丁 / 配置（不放大仓库）
+├── 2026-Bao-DCx/          # SIGGRAPH 2026，已收录（精读完成，复现进行中）
+│   ├── README.md          # 论文卡片
+│   ├── notes.md           # 精读笔记
+│   ├── glossary.md        # 术语表
+│   ├── code-map.md        # 代码地图 + 学习计划
+│   ├── repro.md           # 复现记录
+│   ├── study-log.md       # 学习日志
+│   └── assets/            # 论文插图（CC BY 4.0）
 └── 2024-XXXX-YYYY/
 ```
 
 ## 新增一篇的步骤
 
 ```bash
-mkdir -p paper-reproduction/papers/2023-Kerbl-3DGS/assets
-cp paper-reproduction/templates/paper-card.md  paper-reproduction/papers/2023-Kerbl-3DGS/README.md
-cp paper-reproduction/templates/paper-note.md  paper-reproduction/papers/2023-Kerbl-3DGS/notes.md
-cp paper-reproduction/templates/repro-log.md   paper-reproduction/papers/2023-Kerbl-3DGS/repro.md
+mkdir -p paper-reproduction/papers/2026-Bao-DCx/assets
+cp paper-reproduction/templates/paper-card.md  paper-reproduction/papers/2026-Bao-DCx/README.md
+cp paper-reproduction/templates/paper-note.md  paper-reproduction/papers/2026-Bao-DCx/notes.md
+cp paper-reproduction/templates/repro-log.md   paper-reproduction/papers/2026-Bao-DCx/repro.md
 ```
 
 然后在 [`../README.md`](../README.md) 的状态看板里加一行。
+
+> 实际情况比模板多两个文件：`glossary.md`（术语表，初学时很有用）和 `study-log.md`（学习日志）。
 
 ## 约定
 
