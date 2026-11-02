@@ -1,0 +1,36 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.iml
+
+# ---------- 数据与权重（脚本首次运行自动下载，不入库） ----------
+data/
+datasets/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.ply
+*.npz
+
+# ---------- 训练产物 ----------
+outputs/
+runs/
+logs/
+*.log
+
+# ---------- 系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini

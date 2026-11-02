@@ -1,0 +1,14 @@
+# 核心依赖（CPU 版本即可跑通全部 Demo）
+# PyTorch 官方安装向导：https://pytorch.org/get-started/locally/
+torch>=2.0
+torchvision>=0.15
+
+# 数值与绘图
+numpy>=1.24
+matplotlib>=3.7
+
+# 说明：
+# 1. 本仓库所有 Demo 均未依赖 HuggingFace / diffusers / LangChain 等高层封装，
+#    目的是把每一个算子都亲手写一遍。
+# 2. 数据集（Fashion-MNIST，约 30 MB）由 torchvision 在首次运行时自动下载到本地 data/ 目录，
+#    该目录已被 .gitignore 忽略，不会上传。
